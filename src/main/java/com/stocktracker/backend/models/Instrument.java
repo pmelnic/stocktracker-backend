@@ -34,6 +34,9 @@ public class Instrument {
     @Enumerated(EnumType.STRING)
     private InstrumentType type;
 
+    @Column(name = "is_active", nullable = false)
+    private boolean isActive = true;
+
     @ManyToOne
     @JoinColumn(name = "currency_id",nullable = false)
     private Currency currency;

@@ -14,6 +14,9 @@ public class RegisterRequest {
     @Pattern(regexp = "^\\+?[1-9]\\d{7,14}$", message = "Phone number is Invalid.")
     private String phone;
 
+    private String firstName;
+    private String lastName;
+
     @NotBlank(message = "Password is required")
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$", message = "Pasword must have at least 8 characters, one Number and one special Character")
     private String password;
