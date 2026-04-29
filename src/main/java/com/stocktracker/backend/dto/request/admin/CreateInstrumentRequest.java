@@ -1,4 +1,4 @@
-package com.stocktracker.backend.dto.request.instrument;
+package com.stocktracker.backend.dto.request.admin;
 
 
 import com.stocktracker.backend.models.enums.InstrumentType;
